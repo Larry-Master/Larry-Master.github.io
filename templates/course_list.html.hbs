@@ -2,23 +2,58 @@
 <html>
 <head>
   <title>{{ event_name }}</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      padding: 40px;
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    h1 {
+      color: #4a90e2;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+    }
+
+    ul {
+      list-style-type: circle;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    p {
+      margin: 20px 0;
+    }
+
+    .signature {
+      font-style: italic;
+      color: #888;
+    }
+  </style>
 </head>
 <body>
   <h1>Welcome to the {{ event_name }}!</h1>
 
-  <p>Hi {{ course_name }}!</p>
+  <p>Hi {{ student_name }}!</p>
 
   <p>Choose which Course to enroll:</p>
 
   <ul>
     {{#each courses}}
-      <li>{{this}}</li>
+      <li>{{ this }}</li>
     {{/each}}
   </ul>
 
-
-
-  <p>Signed,<br>
-  {{ uni_name }} 🦄</p>
+  <p class="signature">
+    Signed,<br>
+    {{ uni_name }} 🦄
+  </p>
 </body>
 </html>
