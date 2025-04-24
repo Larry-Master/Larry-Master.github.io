@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ event_name }}</title>
+</head>
+<body>
+  <h1>Welcome to the {{ event_name }}!</h1>
+
+  <p>Hi {{ course_name }}!</p>
+
+  <p>Choose which Course to enroll:</p>
+
+  <ul>
+    {{#each courses}}
+      <li>{{this}}</li>
+    {{/each}}
+  </ul>
+
+
+
+  <p>Signed,<br>
+  {{ uni_name }} 🦄</p>
+</body>
+</html>
