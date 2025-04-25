@@ -3,84 +3,60 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>HTW Berlin Course Selection</title>
+  <title>HTW Berlin | Course Portal</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f8f9fc;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #e0eafc, #cfdef3);
       margin: 0;
-      padding: 2rem;
+      padding: 3rem 1rem;
+      color: #2c3e50;
       text-align: center;
-      color: #333;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background-color: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
     }
 
     h1 {
-      font-size: 2.4rem;
-      color: #2c3e50;
+      font-size: 2.5rem;
       margin-bottom: 0.5rem;
     }
 
-    .badge {
-      background-color: #e2e3e5;
-      display: inline-block;
-      padding: 4px 10px;
-      border-radius: 8px;
-      font-size: 0.9rem;
+    .subtext {
+      font-size: 1.1rem;
       color: #555;
-      margin-bottom: 1.5rem;
-    }
-
-    p {
-      font-size: 1.2rem;
       margin-bottom: 2rem;
     }
 
-    .button-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
+    .note {
+      font-size: 0.95rem;
+      color: #999;
       margin-top: 2rem;
+      font-style: italic;
     }
 
-    a.button {
-      text-decoration: none;
-      color: #fff;
-      background-color: #4a90e2;
-      padding: 12px 24px;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
-      font-size: 1rem;
-      width: 250px;
-      text-align: center;
+    .logo {
+      font-size: 3rem;
+      margin-bottom: 1rem;
     }
 
-    a.button:hover {
-      background-color: #357ab7;
-    }
-
-    .signature {
-      margin-top: 4rem;
-      font-size: 0.9rem;
-      color: #888;
-    }
   </style>
 </head>
 <body>
 
-  <h1>HTW Berlin Course Selection</h1>
-  <div class="badge">Static Page</div>
+  <div class="container">
+    <div class="logo">🎓</div>
+    <h1>HTW Berlin Course Portal</h1>
+    <p class="subtext">Your semester starts here. Discover and organize your study plan with ease.</p>
 
-  <p>Browse, explore, and enroll in courses for the upcoming semester.</p>
-
-  <div class="button-container">
-    <a href="courses.html" class="button">View Courses (Static Page)</a>
-    <a href="/course_list" class="button">View Courses (Dynamic Version)</a>
+    <div class="note">This is a static page preview.</div>
   </div>
-
-  <p class="signature">
-    Made with ❤️ at HTW Berlin 🦄
-  </p>
 
 </body>
 </html>
