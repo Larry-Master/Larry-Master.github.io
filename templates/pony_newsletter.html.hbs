@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ event_name }} - Ponyville News</title>
+</head>
+<body>
+  <h1>🌈 Welcome to the {{ event_name }} Newsletter!</h1>
+
+  <p>Hi {{ student_name }}!</p>
+
+  <p>All avaiable Courses:</p>
+
+  <ul>
+    {{#each activities}}
+      <li>{{this}}</li>
+    {{/each}}
+  </ul>
+
+  <p>Don't forget to bring your {{ favorite_treat }}!</p>
+
+  <p>Signed with sparkles,<br>
+  Princess {{ princess_name }} 🦄</p>
+</body>
+</html>
