@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>{{ event_name }} (Static Page)</title>
+  <title>Course Selection (Static Page)</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -59,25 +59,43 @@
   </style>
 </head>
 <body>
-  <h1>Welcome to the {{ event_name }}!</h1>
+  <h1>Welcome to the Course Selection!</h1>
   <p class="note">(This is the static version of the page)</p>
 
-  <p>Hi {{ student_name }}!</p>
+  <p>Hi Student XYZ!</p>
 
   <p>Choose which Course to enroll:</p>
 
   <ul>
-    {{#each courses}}
       <li>
-        {{ this }}
-        <button onclick="enroll('{{ this }}')">Enroll</button>
+        Web Technology
+        <button onclick="enroll('Web Technology')">Enroll</button>
       </li>
-    {{/each}}
+      <li>
+        Game Engines
+        <button onclick="enroll('Game Engines')">Enroll</button>
+      </li>
+      <li>
+        Game Programming
+        <button onclick="enroll('Game Programming')">Enroll</button>
+      </li>
+      <li>
+        Networking
+        <button onclick="enroll('Networking')">Enroll</button>
+      </li>
+      <li>
+        Informatics 3
+        <button onclick="enroll('Informatics 3')">Enroll</button>
+      </li>
+      <li>
+        Math 2
+        <button onclick="enroll('Math 2')">Enroll</button>
+      </li>
   </ul>
 
   <p class="signature">
     Signed,<br>
-    {{ uni_name }}
+    HTW-Berlin
   </p>
 
   <script>

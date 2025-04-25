@@ -34,4 +34,5 @@ server.get("/course_list", (req, res) => {
 
 server.listen(port, function () {
   console.log("Express listening on " + port);
+
 });
